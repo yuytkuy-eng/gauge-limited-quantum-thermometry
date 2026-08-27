@@ -1,0 +1,32 @@
+{
+  "parameters": {
+    "temperature": 0.8277777777777777,
+    "memory_angle": 0.35454545454545455,
+    "record_length": 8
+  },
+  "best_fixed": {
+    "angle": 1.5707963267948966,
+    "effective": 0.23739567981138504,
+    "determinant": 0.006816474420874056
+  },
+  "best_alternating": {
+    "angles": [
+      1.5707963267948966,
+      1.5707963267948966
+    ],
+    "effective": 0.23739567981138504,
+    "determinant": 0.006816474420874056,
+    "effective_gain_over_best_fixed": 1.0,
+    "determinant_gain_over_best_fixed": 1.0
+  },
+  "best_block": {
+    "angles": [
+      1.5707963267948966,
+      1.5707963267948966
+    ],
+    "effective": 0.23739567981138504,
+    "determinant": 0.006816474420874056,
+    "effective_gain_over_best_fixed": 1.0,
+    "determinant_gain_over_best_fixed": 1.0
+  }
+}

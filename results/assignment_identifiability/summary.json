@@ -1,0 +1,63 @@
+{
+  "parameters": {
+    "temperature": 0.9,
+    "memory_angle": 0.5,
+    "system_memory_angle": 0.55,
+    "false_positive": 0.02,
+    "false_negative": 0.04
+  },
+  "fisher_rank_by_length": {
+    "3": 3,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 3,
+    "11": 3,
+    "12": 3
+  },
+  "smallest_to_largest_eigenvalue_at_N12": 5.666700049132883e-17,
+  "analytic_null_direction_T_normalized": [
+    1.0,
+    0.0,
+    0.0,
+    0.8730815147274971
+  ],
+  "numerical_null_direction_T_normalized": [
+    1.0,
+    -4.881877808795748e-09,
+    1.5988713124090077e-09,
+    0.873081544388479
+  ],
+  "null_direction_max_absolute_difference": 2.9660981892831728e-08,
+  "gauge_test": {
+    "alternative_temperature": 1.3,
+    "alternative_false_negative": 0.2447804843201512,
+    "constant_contrast_times_excitation": 0.2328039730707273,
+    "maximum_record_probability_difference": 3.885780586188048e-16
+  },
+  "multi_coupling_test": {
+    "coupling_angles": [
+      0.25,
+      0.55,
+      0.95,
+      1.35
+    ],
+    "combined_fisher_rank": 3,
+    "combined_effective_temperature_information": 2.3314683517128287e-15
+  },
+  "calibration_design_N12": {
+    "known_detector_temperature_information_per_sensing_shot": 0.010287834998612293,
+    "optimized_ground_reference_fraction": 0.17,
+    "optimized_excited_reference_fraction": 0.01875,
+    "optimized_sensing_fraction": 0.8112499999999999,
+    "optimized_effective_information_per_total_shot": 0.00678734438928184,
+    "optimized_fraction_of_known_detector_information": 0.6597446780782713,
+    "excited_only_optimal_fraction": 0.002,
+    "excited_only_fraction_of_known_detector_information": 0.005043531531827931,
+    "balanced_optimal_total_fraction": 0.228,
+    "balanced_fraction_of_known_detector_information": 0.5950178419203672
+  }
+}

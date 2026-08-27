@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# LaTeX intermediates (the manuscript PDF and bbl remain tracked)
+paper/*.aux
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/_render/
+
+# Large redundant publication exports
+results/**/*.tiff
+results/**/*.tif
+
+# Local run logs and temporary files
+*.log
+*.tmp
+*.bak

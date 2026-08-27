@@ -1,0 +1,25 @@
+{
+  "record_length": 8,
+  "system_memory_angle": 0.55,
+  "protocols": {
+    "fixed": 0.72,
+    "alternating": [
+      0.42,
+      1.02
+    ]
+  },
+  "reversal_points": 52,
+  "recovery_points_meeting_threshold": 0,
+  "max_apparent_ratio": 1.0367454685102566,
+  "min_nuisance_ratio": 0.1174681898503403,
+  "max_alternating_recovery": 1.1355549502486553,
+  "best_recovery_at": {
+    "temperature": 0.35,
+    "memory_angle": 1.3
+  },
+  "max_determinant_gain": 1.3640407787109383,
+  "best_determinant_gain_at": {
+    "temperature": 0.5888888888888888,
+    "memory_angle": 1.3
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "parameters": {
+    "temperature": 0.9,
+    "memory_angle": 0.5,
+    "system_memory_angle": 0.55,
+    "false_positive": 0.02,
+    "false_negative": 0.04,
+    "record_length": 8
+  },
+  "rank_result": {
+    "all_non_full_swap_angles_full_rank": true,
+    "full_swap_rank": 3
+  },
+  "best_fixed": {
+    "angle": 0.8500000000000001,
+    "effective_temperature_information": 4.3606005751706256e-05,
+    "known_detector_information": 0.03597740887078085,
+    "fraction_of_known_detector_information": 0.001212038529743063,
+    "condition_number": 5463729.351274545
+  },
+  "best_alternating": {
+    "angles": [
+      0.7000000000000001,
+      1.0
+    ],
+    "effective_temperature_information": 9.634464682445332e-05,
+    "gain_over_best_fixed": 2.2094352638726478,
+    "fraction_of_known_detector_information": 0.002876285822918841
+  },
+  "best_independent_block_mixture": {
+    "angles": [
+      0.7000000000000001,
+      1.5707963267948966
+    ],
+    "first_angle_weight": 0.66,
+    "second_angle_weight": 0.33999999999999997,
+    "effective_temperature_information": 0.0002419734159002096,
+    "gain_over_best_fixed": 5.549084621004102,
+    "fraction_of_known_detector_information": 0.0048723214114420555
+  },
+  "full_swap_boundary_scaling": {
+    "effective_information_exponent": 3.9904386100096914,
+    "minimum_eigenvalue_exponent": 3.9847312732299267
+  },
+  "finite_difference_stability": {
+    "step_scales": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "effective_information": [
+      4.360599799635434e-05,
+      4.3606005751706256e-05,
+      4.3606036750187815e-05,
+      4.360616064502665e-05
+    ],
+    "relative_range": 3.7299603461604215e-06
+  },
+  "interpretation": "Non-full-swap readout breaks the exact gauge, but internal self-calibration retains below one percent of the corresponding known-detector temperature information in this scan."
+}

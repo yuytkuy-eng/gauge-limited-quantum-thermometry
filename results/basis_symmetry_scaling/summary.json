@@ -1,0 +1,71 @@
+{
+  "parameters": {
+    "temperature": 0.9,
+    "memory_angle": 0.5,
+    "system_memory_angle": 0.55,
+    "false_positive": 0.02,
+    "false_negative": 0.04,
+    "block_length": 8
+  },
+  "small_angle_fit": {
+    "points": 8,
+    "angle_interval": [
+      0.008,
+      0.037912885052305965
+    ],
+    "fits": {
+      "fixed": {
+        "exponent": 3.9961643716283173,
+        "coefficient": 0.0116729962159246,
+        "r_squared": 0.999999678441272
+      },
+      "alternating": {
+        "exponent": 3.985208973982064,
+        "coefficient": 1.1412279589764645,
+        "r_squared": 0.9999969533549156
+      },
+      "block_mixture": {
+        "exponent": 3.9967257397349596,
+        "coefficient": 1.3130803965425761,
+        "r_squared": 0.9999996845832466
+      },
+      "fixed_minimum_eigenvalue": {
+        "exponent": 3.995431252702428,
+        "coefficient": 0.006604065119142254,
+        "r_squared": 0.9999997252871285
+      },
+      "alternating_minimum_eigenvalue": {
+        "exponent": 3.992334967975872,
+        "coefficient": 0.6692068482346127,
+        "r_squared": 0.9999992505324394
+      },
+      "block_mixture_minimum_eigenvalue": {
+        "exponent": 3.9984678746837483,
+        "coefficient": 0.7509080577225564,
+        "r_squared": 0.999999950651882
+      }
+    }
+  },
+  "sign_reversal_symmetry": {
+    "finite_difference_step": 0.001,
+    "fixed": {
+      "l2_norm": 0.0,
+      "maximum_absolute_component": 0.0
+    },
+    "alternating": {
+      "l2_norm": 0.0,
+      "maximum_absolute_component": 0.0
+    }
+  },
+  "asymptotic_block_design": {
+    "test_angle": 0.01,
+    "optimal_tilted_block_fraction": 0.5,
+    "effective_information": 1.3324445324869316e-08,
+    "quartic_coefficient": 1.3324445324869316
+  },
+  "comparison": {
+    "previous_incomplete_reset_information_exponent": 3.9904386100096914,
+    "basis_block_mixture_information_exponent": 3.9967257397349596
+  },
+  "interpretation": "Excitation-number symmetry makes every record probability even under a common sign reversal of the real basis rotation. The observable model therefore leaves the detector-temperature gauge only at second order in the angle, and efficient Fisher information appears at fourth order."
+}

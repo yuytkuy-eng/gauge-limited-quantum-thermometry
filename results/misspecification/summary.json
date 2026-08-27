@@ -1,0 +1,9 @@
+{
+  "record_length": 8,
+  "probe_angle": 1.5707963267948966,
+  "max_absolute_bias": 1.6666666666666665,
+  "max_absolute_relative_bias": 0.6944444444444444,
+  "median_absolute_relative_bias": 0.1878306878306878,
+  "fraction_over_10_percent_relative_bias": 0.6666666666666666,
+  "max_minimum_kl": 0.07935663250014446
+}

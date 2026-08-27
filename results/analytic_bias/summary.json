@@ -1,0 +1,8 @@
+{
+  "finite_block_length": 8,
+  "candidate_temperature_grid_spacing": 0.016666666666666663,
+  "max_grid_fit_minus_exact_finite_block": 0.008401375865658145,
+  "all_nonzero_memory_long_biases_negative": true,
+  "median_absolute_long_relative_bias": 0.22730575156179056,
+  "max_absolute_long_relative_bias": 0.8223576746141082
+}

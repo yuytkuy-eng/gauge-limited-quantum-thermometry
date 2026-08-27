@@ -1,0 +1,561 @@
+{
+  "grid": {
+    "axes": {
+      "temperature": [
+        0.6,
+        0.9,
+        1.3
+      ],
+      "memory_angle": [
+        0.2,
+        0.5,
+        0.9
+      ],
+      "false_positive": [
+        0.005,
+        0.02,
+        0.06
+      ],
+      "false_negative": [
+        0.01,
+        0.04,
+        0.12
+      ]
+    },
+    "points": 81,
+    "protocols": 2,
+    "total_binary_readouts_per_dataset": 8000000,
+    "linearized_replicates_per_point_and_protocol": 2000,
+    "exact_mle_replicates_per_point_and_protocol": 24,
+    "fixed_design_fractions": {
+      "internal_x_block_fraction": 0.325,
+      "external_sensing_ground_excited_readout_fractions": [
+        0.795,
+        0.185,
+        0.02
+      ]
+    },
+    "results": {
+      "internal_basis": {
+        "descriptive_pooled_exact_mle_temperature_coverage": 0.9501028806584362,
+        "descriptive_pooled_coverage_wilson_95_interval": [
+          0.9395052598392346,
+          0.9589251499229254
+        ],
+        "mean_linearized_temperature_coverage": 0.9503271604938271,
+        "mean_mle_convergence_fraction": 0.8652263374485598,
+        "cells_with_convergence_below_0_9": 33,
+        "cells_whose_wilson_interval_contains_0_95": 75,
+        "linearized_temperature_coverage_range": [
+          0.94,
+          0.9645
+        ],
+        "exact_mle_temperature_coverage_range_per_24_replicate_cell": [
+          0.75,
+          1.0
+        ],
+        "fisher_temperature_sd_range": [
+          0.005278373317894203,
+          0.7809085836219221
+        ],
+        "rmse_to_fisher_sd_range": [
+          0.5714819830148945,
+          1.4209523935703838
+        ],
+        "convergence_fraction_range": [
+          0.20833333333333334,
+          1.0
+        ],
+        "linear_physical_fraction_range": [
+          0.497,
+          1.0
+        ],
+        "descriptive_worst_coverage_point": {
+          "temperature": 1.3,
+          "memory_angle": 0.2,
+          "false_positive": 0.06,
+          "false_negative": 0.01,
+          "mle_coverage_T": 0.75,
+          "mle_coverage_wilson_low_T": 0.55100555994846,
+          "mle_coverage_wilson_high_T": 0.8800063377140499
+        },
+        "descriptive_largest_rmse_ratio_point": {
+          "temperature": 0.6,
+          "memory_angle": 0.5,
+          "false_positive": 0.06,
+          "false_negative": 0.12,
+          "rmse_to_fisher_sd": 1.4209523935703838
+        },
+        "descriptive_minimum_convergence_point": {
+          "temperature": 0.6,
+          "memory_angle": 0.2,
+          "false_positive": 0.06,
+          "false_negative": 0.01,
+          "mle_converged_fraction": 0.20833333333333334
+        }
+      },
+      "external_references": {
+        "descriptive_pooled_exact_mle_temperature_coverage": 0.9449588477366255,
+        "descriptive_pooled_coverage_wilson_95_interval": [
+          0.9339154225581554,
+          0.9542472110924372
+        ],
+        "mean_linearized_temperature_coverage": 0.9492654320987655,
+        "mean_mle_convergence_fraction": 0.999485596707819,
+        "cells_with_convergence_below_0_9": 0,
+        "cells_whose_wilson_interval_contains_0_95": 78,
+        "linearized_temperature_coverage_range": [
+          0.9405,
+          0.9635
+        ],
+        "exact_mle_temperature_coverage_range_per_24_replicate_cell": [
+          0.8333333333333334,
+          1.0
+        ],
+        "fisher_temperature_sd_range": [
+          0.0016389298083634015,
+          0.011553853273708415
+        ],
+        "rmse_to_fisher_sd_range": [
+          0.7052193900739028,
+          1.3436955285604533
+        ],
+        "convergence_fraction_range": [
+          0.9583333333333334,
+          1.0
+        ],
+        "linear_physical_fraction_range": [
+          0.998,
+          1.0
+        ],
+        "descriptive_worst_coverage_point": {
+          "temperature": 0.9,
+          "memory_angle": 0.2,
+          "false_positive": 0.005,
+          "false_negative": 0.12,
+          "mle_coverage_T": 0.8333333333333334,
+          "mle_coverage_wilson_low_T": 0.6414692935030095,
+          "mle_coverage_wilson_high_T": 0.9332132367136705
+        },
+        "descriptive_largest_rmse_ratio_point": {
+          "temperature": 0.9,
+          "memory_angle": 0.2,
+          "false_positive": 0.005,
+          "false_negative": 0.12,
+          "rmse_to_fisher_sd": 1.3436955285604533
+        },
+        "descriptive_minimum_convergence_point": {
+          "temperature": 0.6,
+          "memory_angle": 0.2,
+          "false_positive": 0.06,
+          "false_negative": 0.04,
+          "mle_converged_fraction": 0.9583333333333334
+        }
+      }
+    }
+  },
+  "prior_sensitivity": {
+    "stress_points": {
+      "central": [
+        0.9,
+        0.5,
+        0.02,
+        0.04
+      ],
+      "cold_clean_high_memory": [
+        0.6,
+        0.9,
+        0.005,
+        0.01
+      ],
+      "hot_noisy_low_memory": [
+        1.3,
+        0.2,
+        0.06,
+        0.12
+      ]
+    },
+    "baseline_prior": "uniform on the wide bounded physical domain",
+    "alternative_priors": {
+      "log_temperature": "p(T) proportional to 1/T",
+      "low_error_beta_1_10": "independent Beta(1,10) kernels for alpha and beta",
+      "jeffreys_assignment": "independent Beta(1/2,1/2) kernels for alpha and beta",
+      "restricted_support": "T=[0.45,1.55], mu=[0.10,1.10], alpha<=0.10, beta<=0.20"
+    },
+    "importance_method": "self-normalized alternative-to-baseline prior ratios on draws from the same exact-likelihood baseline posterior",
+    "mcmc_diagnostics": [
+      {
+        "point": "central",
+        "protocol": "internal_basis",
+        "truth": [
+          0.9,
+          0.5,
+          0.02,
+          0.04
+        ],
+        "allocation": [
+          675000,
+          325000
+        ],
+        "mle": [
+          0.8928787109846381,
+          0.5076084648264543,
+          0.020616280294192817,
+          0.04085853167317424
+        ],
+        "mle_converged": true,
+        "coordinate_system": "gauge-adapted (T,mu,alpha,kappa)",
+        "acceptance_rate": [
+          0.2598214285714286,
+          0.2519642857142857,
+          0.31125,
+          0.28464285714285714
+        ],
+        "split_rhat_sampling_coordinates": [
+          1.0142769016682558,
+          1.0099639133695886,
+          1.0129671423075297,
+          1.0137818750181875
+        ],
+        "bulk_ess_sampling_coordinates": [
+          209.2428891402291,
+          284.95454390523633,
+          212.63577331407305,
+          209.71595233311166
+        ],
+        "draws_per_chain": 4000,
+        "burn_in_per_chain": 1600,
+        "chains": 4
+      },
+      {
+        "point": "central",
+        "protocol": "external_references",
+        "truth": [
+          0.9,
+          0.5,
+          0.02,
+          0.04
+        ],
+        "allocation": [
+          795000,
+          1480000,
+          160000
+        ],
+        "mle": [
+          0.8974286442188412,
+          0.49169925674936477,
+          0.0200276396866768,
+          0.039962500001454786
+        ],
+        "mle_converged": true,
+        "coordinate_system": "physical (T,mu,alpha,beta)",
+        "acceptance_rate": [
+          0.305,
+          0.26,
+          0.28535714285714286,
+          0.27464285714285713
+        ],
+        "split_rhat_sampling_coordinates": [
+          1.0064615753526287,
+          1.0018499906692688,
+          1.0075270517011747,
+          1.0029433661291032
+        ],
+        "bulk_ess_sampling_coordinates": [
+          973.1905374034845,
+          946.1258416721637,
+          1153.6448604351974,
+          1165.2714027565025
+        ],
+        "draws_per_chain": 4000,
+        "burn_in_per_chain": 1600,
+        "chains": 4
+      },
+      {
+        "point": "cold_clean_high_memory",
+        "protocol": "internal_basis",
+        "truth": [
+          0.6,
+          0.9,
+          0.005,
+          0.01
+        ],
+        "allocation": [
+          675000,
+          325000
+        ],
+        "mle": [
+          0.5954388683157128,
+          0.8899337296977106,
+          0.004978570468306322,
+          0.009395712320618052
+        ],
+        "mle_converged": true,
+        "coordinate_system": "gauge-adapted (T,mu,alpha,kappa)",
+        "acceptance_rate": [
+          0.31910714285714287,
+          0.3142857142857143,
+          0.27017857142857143,
+          0.28267857142857145
+        ],
+        "split_rhat_sampling_coordinates": [
+          1.0014926239718893,
+          1.0006737982975602,
+          1.0014390111862563,
+          1.0014352204537649
+        ],
+        "bulk_ess_sampling_coordinates": [
+          1229.5593204440147,
+          1274.1646638281259,
+          1265.727138898771,
+          1229.542792793747
+        ],
+        "draws_per_chain": 4000,
+        "burn_in_per_chain": 1600,
+        "chains": 4
+      },
+      {
+        "point": "cold_clean_high_memory",
+        "protocol": "external_references",
+        "truth": [
+          0.6,
+          0.9,
+          0.005,
+          0.01
+        ],
+        "allocation": [
+          795000,
+          1480000,
+          160000
+        ],
+        "mle": [
+          0.5994198190150063,
+          0.8993268881374918,
+          0.004971321607328241,
+          0.010199999999792144
+        ],
+        "mle_converged": true,
+        "coordinate_system": "physical (T,mu,alpha,beta)",
+        "acceptance_rate": [
+          0.26089285714285715,
+          0.26607142857142857,
+          0.27071428571428574,
+          0.25339285714285714
+        ],
+        "split_rhat_sampling_coordinates": [
+          1.00445537088831,
+          1.002366332580849,
+          1.002943532531369,
+          1.0001621702772918
+        ],
+        "bulk_ess_sampling_coordinates": [
+          1123.951120869719,
+          1101.6700360860693,
+          1227.4181123188628,
+          1105.9301108498466
+        ],
+        "draws_per_chain": 4000,
+        "burn_in_per_chain": 1600,
+        "chains": 4
+      },
+      {
+        "point": "hot_noisy_low_memory",
+        "protocol": "internal_basis",
+        "truth": [
+          1.3,
+          0.2,
+          0.06,
+          0.12
+        ],
+        "allocation": [
+          675000,
+          325000
+        ],
+        "mle": [
+          1.1079063912654326,
+          0.19798867750017002,
+          0.06751757880574843,
+          0.12742700786074596
+        ],
+        "mle_converged": true,
+        "coordinate_system": "gauge-adapted (T,mu,alpha,kappa)",
+        "acceptance_rate": [
+          0.5058928571428571,
+          0.49089285714285713,
+          0.5375,
+          0.5144642857142857
+        ],
+        "global_temperature_acceptance_rate": [
+          0.5058928571428571,
+          0.49089285714285713,
+          0.5375,
+          0.5144642857142857
+        ],
+        "conditional_nuisance_acceptance_rate": null,
+        "global_temperature_proposal_scale": null,
+        "split_rhat_sampling_coordinates": [
+          1.0027735010277448,
+          1.0021548052103666,
+          1.0029447111789498,
+          1.0029848647323403
+        ],
+        "bulk_ess_sampling_coordinates": [
+          2994.708618100898,
+          1516.0822053839304,
+          2835.9033389587876,
+          2849.4158168365216
+        ],
+        "draws_per_chain": 4000,
+        "burn_in_per_chain": 1600,
+        "chains": 4
+      },
+      {
+        "point": "hot_noisy_low_memory",
+        "protocol": "external_references",
+        "truth": [
+          1.3,
+          0.2,
+          0.06,
+          0.12
+        ],
+        "allocation": [
+          795000,
+          1480000,
+          160000
+        ],
+        "mle": [
+          1.2836621730320181,
+          0.18407175202827972,
+          0.06010896682675705,
+          0.11727500000569684
+        ],
+        "mle_converged": true,
+        "coordinate_system": "physical (T,mu,alpha,beta)",
+        "acceptance_rate": [
+          0.30142857142857143,
+          0.27517857142857144,
+          0.33464285714285713,
+          0.31660714285714286
+        ],
+        "split_rhat_sampling_coordinates": [
+          1.0025960975148946,
+          1.0028751626224282,
+          1.0059754462503412,
+          1.0019512870565164
+        ],
+        "bulk_ess_sampling_coordinates": [
+          1132.0981736533433,
+          684.009534876514,
+          1227.9168218759555,
+          1302.7705716227533
+        ],
+        "draws_per_chain": 4000,
+        "burn_in_per_chain": 1600,
+        "chains": 4
+      }
+    ],
+    "results": {
+      "maximum_absolute_temperature_mean_shift_in_baseline_sd": 0.3714033574126162,
+      "temperature_sd_ratio_range": [
+        0.6395416921801084,
+        1.0085650955917704
+      ],
+      "minimum_importance_ess_fraction": 0.6888750000000001,
+      "maximum_normalized_weight": 0.00021767060898540287,
+      "mcmc_maximum_split_rhat": 1.0142769016682558,
+      "mcmc_minimum_bulk_ess": 209.2428891402291,
+      "by_protocol_and_stress_point": {
+        "internal_basis": {
+          "central": {
+            "baseline_temperature_mean": 0.8936002254117966,
+            "baseline_temperature_sd": 0.03801547195885129,
+            "baseline_temperature_95_interval": [
+              0.8200507461211322,
+              0.9681395745356808
+            ],
+            "maximum_absolute_mean_shift_in_baseline_sd": 0.09923352315069855,
+            "alternative_sd_ratio_range": [
+              0.9995785602368821,
+              1.0042453501100463
+            ],
+            "minimum_importance_ess_fraction": 0.9899426223290335
+          },
+          "cold_clean_high_memory": {
+            "baseline_temperature_mean": 0.5952578271916611,
+            "baseline_temperature_sd": 0.005462772585312096,
+            "baseline_temperature_95_interval": [
+              0.5850328366005672,
+              0.6062340955607162
+            ],
+            "maximum_absolute_mean_shift_in_baseline_sd": 0.08841432230538376,
+            "alternative_sd_ratio_range": [
+              0.9996473118632385,
+              1.0085650955917704
+            ],
+            "minimum_importance_ess_fraction": 0.9895718660103713
+          },
+          "hot_noisy_low_memory": {
+            "baseline_temperature_mean": 1.2335498106932603,
+            "baseline_temperature_sd": 0.4010447378489777,
+            "baseline_temperature_95_interval": [
+              0.5227527005501719,
+              1.94546404754351
+            ],
+            "maximum_absolute_mean_shift_in_baseline_sd": 0.3714033574126162,
+            "alternative_sd_ratio_range": [
+              0.6395416921801084,
+              1.002216137504429
+            ],
+            "minimum_importance_ess_fraction": 0.6888750000000001
+          }
+        },
+        "external_references": {
+          "central": {
+            "baseline_temperature_mean": 0.8975987634640334,
+            "baseline_temperature_sd": 0.004091215081419227,
+            "baseline_temperature_95_interval": [
+              0.8896788173546073,
+              0.9059410365140484
+            ],
+            "maximum_absolute_mean_shift_in_baseline_sd": 0.0045567925986859025,
+            "alternative_sd_ratio_range": [
+              0.9998620569841244,
+              1.0
+            ],
+            "minimum_importance_ess_fraction": 0.999957888027342
+          },
+          "cold_clean_high_memory": {
+            "baseline_temperature_mean": 0.5994262019585191,
+            "baseline_temperature_sd": 0.0018342163751050432,
+            "baseline_temperature_95_interval": [
+              0.5956916618138687,
+              0.6029623023429317
+            ],
+            "maximum_absolute_mean_shift_in_baseline_sd": 0.0030610556087105984,
+            "alternative_sd_ratio_range": [
+              0.9997122776634406,
+              1.0001753661488106
+            ],
+            "minimum_importance_ess_fraction": 0.9998174977480678
+          },
+          "hot_noisy_low_memory": {
+            "baseline_temperature_mean": 1.2821801584065975,
+            "baseline_temperature_sd": 0.010677982083595475,
+            "baseline_temperature_95_interval": [
+              1.261930826366117,
+              1.3038858856924105
+            ],
+            "maximum_absolute_mean_shift_in_baseline_sd": 0.05139756306905011,
+            "alternative_sd_ratio_range": [
+              0.9731021516391041,
+              1.0001865003845596
+            ],
+            "minimum_importance_ess_fraction": 0.9636250000000005
+          }
+        }
+      }
+    }
+  },
+  "independent_unit": "one independently prepared length-8 trajectory block; every ground/excited reference shot is one independent binary unit",
+  "coverage_interpretation": "Per-cell exact-MLE coverage uses 24 datasets and is accompanied by Wilson intervals; grid extrema are descriptive stress-test statistics rather than multiplicity-adjusted hypothesis tests."
+}

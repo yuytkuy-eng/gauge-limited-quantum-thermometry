@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "temperature": 0.9,
+    "memory_angle": 0.5,
+    "system_memory_angle": 0.55,
+    "false_positive": 0.02,
+    "false_negative": 0.04,
+    "maximum_block_length": 8
+  },
+  "length_8_quantum_fisher": {
+    "effective_information_per_block": 0.289145169700008,
+    "effective_information_per_readout": 0.036143146212501,
+    "maximum_mean_sld_commutator": 6.93354232900779e-19,
+    "weak_compatibility_at_numerical_precision": true
+  },
+  "information_ladder_per_readout": {
+    "joint_output_qfi": 0.036143146212501,
+    "ideal_energy_measurement": 0.020328417588165094,
+    "known_noisy_energy_measurement": 0.012379461965650002,
+    "external_reference_calibration": 0.007834816707731198,
+    "basis_controlled_internal_calibration": 6.860022118201914e-05,
+    "incomplete_reset_internal_calibration": 3.02466769875262e-05,
+    "unknown_detector_all_z": 5.509481759702339e-15
+  },
+  "fraction_of_joint_output_qfi": {
+    "joint_output_qfi": 1.0,
+    "ideal_energy_measurement": 0.5624418380360593,
+    "known_noisy_energy_measurement": 0.3425120185405514,
+    "external_reference_calibration": 0.21677185106318536,
+    "basis_controlled_internal_calibration": 0.00189801465480313,
+    "incomplete_reset_internal_calibration": 0.000836857887514636,
+    "unknown_detector_all_z": 1.5243503504951512e-13
+  },
+  "interpretation": "At N=8, ideal local energy measurement extracts 56.2% of the effective joint-output QFI and known assignment errors reduce this to 34.3%. Unknown detector parameters create a qualitatively larger loss: the all-Z protocol becomes exactly nonidentifiable. External references recover 21.7% of the QFI rate, whereas the best tested internal basis control recovers about 0.19%."
+}

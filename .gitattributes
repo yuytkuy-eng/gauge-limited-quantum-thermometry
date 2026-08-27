@@ -1,0 +1,14 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.tex text eol=lf
+*.bib text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.npz binary
+*.pdf binary
+*.png binary
+*.svg text eol=lf whitespace=-blank-at-eol
+paper/quantum.bst text eol=lf whitespace=-blank-at-eol

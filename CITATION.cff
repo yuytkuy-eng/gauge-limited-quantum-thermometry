@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software or its archived simulation data, please cite the versioned repository release."
+title: "Gauge limits to self-calibrating quantum thermometry: code and data"
+type: software
+authors:
+  - family-names: Yu
+    given-names: Shifan
+    affiliation: "School of Physics, Xi'an Jiaotong University"
+    email: yuytkuy@stu.xjtu.edu.cn
+version: 0.2.0
+date-released: 2026-08-28
+license: MIT
+repository-code: "https://github.com/yuytkuy-eng/gauge-limited-quantum-thermometry"
+url: "https://github.com/yuytkuy-eng/gauge-limited-quantum-thermometry"
+keywords:
+  - quantum thermometry
+  - quantum metrology
+  - collisional models
+  - identifiability
+  - Fisher information
+  - robust experimental design

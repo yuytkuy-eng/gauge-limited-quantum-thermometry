@@ -1,0 +1,38 @@
+{
+  "representative_parameters": {
+    "temperature": 0.9,
+    "memory_angle": 0.5,
+    "system_memory_angle": 0.55
+  },
+  "critical_false_positive_rates": {
+    "beta_0_percent": 0.005441423190298545,
+    "beta_1_percent": 0.006108786560367961,
+    "beta_3_percent": 0.00744351330050679
+  },
+  "critical_false_positive_percent": {
+    "beta_0_percent": 0.5441423190298545,
+    "beta_1_percent": 0.6108786560367961,
+    "beta_3_percent": 0.744351330050679
+  },
+  "symmetric_threshold_consistency": {
+    "symmetric_rate": 0.005830531505799147,
+    "general_boundary_alpha_at_beta_equal_symmetric_rate": 0.005830531505799147
+  },
+  "calibrated_assignment_test": {
+    "false_positive": 0.02,
+    "false_negative": 0.04,
+    "max_absolute_pseudo_temperature_change": 4.440892098500626e-16
+  },
+  "bias_plane_fraction_negative": 0.14442349019779835,
+  "bias_plane_fraction_positive": 0.8555765098022017,
+  "bias_plane_range": [
+    -0.11877591704344859,
+    1.5805187899895836
+  ],
+  "critical_surface_fixed_false_negative": 0.01,
+  "critical_surface_median_percent": 1.1696329915941597,
+  "critical_surface_range_percent": [
+    0.02116320080403904,
+    8.697973360365467
+  ]
+}

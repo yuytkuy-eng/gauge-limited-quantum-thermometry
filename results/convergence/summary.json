@@ -1,0 +1,11 @@
+{
+  "parameters": {
+    "temperature": 0.8277777777777777,
+    "memory_angle": 0.35454545454545455,
+    "probe_angle": 0.72
+  },
+  "relative_effective_information_spread_at_N8": 1.7790022183053463e-06,
+  "naive_growth_N4_to_N14": 4.1876785312106,
+  "effective_growth_N4_to_N14": 1.0730629426857685,
+  "condition_number_at_N14": 307.4504650333381
+}

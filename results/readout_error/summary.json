@@ -1,0 +1,13 @@
+{
+  "calibrated_error_test_value": 0.03,
+  "max_calibrated_minus_ideal_pseudo_temperature": 2.6645352591003757e-15,
+  "representative_parameters": {
+    "temperature": 0.9,
+    "memory_angle": 0.5
+  },
+  "representative_critical_ignored_error": 0.005830531505799147,
+  "representative_critical_ignored_error_percent": 0.5830531505799147,
+  "median_critical_error_percent_nonzero_memory": 1.2338435293802184,
+  "minimum_positive_critical_error_percent": 0.00036926526175564415,
+  "maximum_critical_error_percent": 8.891051738707043
+}

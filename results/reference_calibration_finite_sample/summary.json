@@ -1,0 +1,181 @@
+{
+  "parameters": {
+    "temperature": 0.9,
+    "memory_angle": 0.5,
+    "false_positive": 0.02,
+    "false_negative": 0.04,
+    "record_length": 8
+  },
+  "optimal_readout_allocation": {
+    "sensing_fraction": 0.7949999999999999,
+    "ground_reference_fraction": 0.185,
+    "excited_reference_fraction": 0.02,
+    "effective_temperature_information_per_readout": 0.007834816707731198
+  },
+  "one_step_replicates": 4000,
+  "one_step_results": [
+    {
+      "total_binary_readouts": 100000,
+      "sensing_blocks": 9938,
+      "ground_reference_shots": 18500,
+      "excited_reference_shots": 1996,
+      "predicted_temperature_sd": 0.03572608834236775,
+      "empirical_temperature_sd": 0.036288157846377296,
+      "empirical_to_predicted_sd_ratio": 1.015732746854992,
+      "temperature_bias": -0.00022729300357102422,
+      "wald_95_coverage": 0.94625,
+      "negative_beta_fraction": 0.0
+    },
+    {
+      "total_binary_readouts": 300000,
+      "sensing_blocks": 29812,
+      "ground_reference_shots": 55500,
+      "excited_reference_shots": 6004,
+      "predicted_temperature_sd": 0.020626474173217717,
+      "empirical_temperature_sd": 0.02053335022229771,
+      "empirical_to_predicted_sd_ratio": 0.9954852220433814,
+      "temperature_bias": 0.0002887723222141435,
+      "wald_95_coverage": 0.95375,
+      "negative_beta_fraction": 0.0
+    },
+    {
+      "total_binary_readouts": 1000000,
+      "sensing_blocks": 99375,
+      "ground_reference_shots": 185000,
+      "excited_reference_shots": 20000,
+      "predicted_temperature_sd": 0.01129758401348264,
+      "empirical_temperature_sd": 0.01122132630422305,
+      "empirical_to_predicted_sd_ratio": 0.9932500869948315,
+      "temperature_bias": 0.00021030633703219355,
+      "wald_95_coverage": 0.95075,
+      "negative_beta_fraction": 0.0
+    },
+    {
+      "total_binary_readouts": 3000000,
+      "sensing_blocks": 298125,
+      "ground_reference_shots": 555000,
+      "excited_reference_shots": 60000,
+      "predicted_temperature_sd": 0.006522663171376616,
+      "empirical_temperature_sd": 0.006503532645068425,
+      "empirical_to_predicted_sd_ratio": 0.9970670681889353,
+      "temperature_bias": 0.00015563666746878964,
+      "wald_95_coverage": 0.95225,
+      "negative_beta_fraction": 0.0
+    },
+    {
+      "total_binary_readouts": 8000000,
+      "sensing_blocks": 795000,
+      "ground_reference_shots": 1480000,
+      "excited_reference_shots": 160000,
+      "predicted_temperature_sd": 0.003994299133479153,
+      "empirical_temperature_sd": 0.003959276663420309,
+      "empirical_to_predicted_sd_ratio": 0.9912318860234341,
+      "temperature_bias": -2.513565704652662e-05,
+      "wald_95_coverage": 0.952,
+      "negative_beta_fraction": 0.0
+    },
+    {
+      "total_binary_readouts": 30000000,
+      "sensing_blocks": 2981250,
+      "ground_reference_shots": 5550000,
+      "excited_reference_shots": 600000,
+      "predicted_temperature_sd": 0.00206264720316473,
+      "empirical_temperature_sd": 0.0020631553128004528,
+      "empirical_to_predicted_sd_ratio": 1.0002463386055274,
+      "temperature_bias": 5.475358002256328e-05,
+      "wald_95_coverage": 0.947,
+      "negative_beta_fraction": 0.0
+    },
+    {
+      "total_binary_readouts": 80000000,
+      "sensing_blocks": 7950000,
+      "ground_reference_shots": 14800000,
+      "excited_reference_shots": 1600000,
+      "predicted_temperature_sd": 0.0012631082917831048,
+      "empirical_temperature_sd": 0.001267409574075787,
+      "empirical_to_predicted_sd_ratio": 1.003405315538393,
+      "temperature_bias": 1.2755305488039381e-05,
+      "wald_95_coverage": 0.953,
+      "negative_beta_fraction": 0.0
+    }
+  ],
+  "mle_replicates_per_case": 32,
+  "external_calibration_mle_results": [
+    {
+      "total_binary_readouts": 8000000,
+      "replicates": 32,
+      "predicted_temperature_sd": 0.003994299133479153,
+      "empirical_temperature_sd": 0.004413057425096677,
+      "temperature_bias": -0.00023440271124424913,
+      "temperature_rmse": 0.004349876360119566,
+      "mean_reported_temperature_se": 0.0039909052611571474,
+      "wald_95_coverage": 0.90625,
+      "converged_fraction": 1.0,
+      "mean_iterations": 2.0
+    },
+    {
+      "total_binary_readouts": 80000000,
+      "replicates": 32,
+      "predicted_temperature_sd": 0.0012631082917831048,
+      "empirical_temperature_sd": 0.0011952959804694806,
+      "temperature_bias": 0.00035398310688580445,
+      "temperature_rmse": 0.0012285717849837147,
+      "mean_reported_temperature_se": 0.0012641242373723635,
+      "wald_95_coverage": 0.96875,
+      "converged_fraction": 0.96875,
+      "mean_iterations": 1.78125
+    }
+  ],
+  "external_vs_internal_mle": [
+    {
+      "total_binary_readouts": 8000000,
+      "external_temperature_rmse": 0.004349876360119566,
+      "internal_temperature_rmse": 0.08687038089229708,
+      "internal_to_external_rmse_ratio": 19.970770132397337,
+      "external_converged_fraction": 1.0,
+      "internal_converged_fraction": 0.5625
+    },
+    {
+      "total_binary_readouts": 80000000,
+      "external_temperature_rmse": 0.0012285717849837147,
+      "internal_temperature_rmse": 0.01982953370128859,
+      "internal_to_external_rmse_ratio": 16.140313446602097,
+      "external_converged_fraction": 0.96875,
+      "internal_converged_fraction": 1.0
+    }
+  ],
+  "conditional_bayesian_posterior": {
+    "total_binary_readouts": 200000,
+    "sensing_only": {
+      "mean_temperature": 1.0271283995643639,
+      "temperature_sd": 0.09655591892318938,
+      "temperature_95_interval": [
+        0.875,
+        1.195
+      ],
+      "mean_false_negative": 0.11215212030813768,
+      "false_negative_sd": 0.05788878541677018,
+      "false_negative_95_interval": [
+        0.006666666666666667,
+        0.19666666666666668
+      ],
+      "posterior_correlation": 0.9771644269990082
+    },
+    "with_reference_calibration": {
+      "mean_temperature": 0.9120305333075539,
+      "temperature_sd": 0.012950500333294803,
+      "temperature_95_interval": [
+        0.885,
+        0.94
+      ],
+      "mean_false_negative": 0.03850796534147624,
+      "false_negative_sd": 0.0030424156541188473,
+      "false_negative_95_interval": [
+        0.03333333333333333,
+        0.045000000000000005
+      ],
+      "posterior_correlation": 0.2773839255623844
+    },
+    "conditioning": "mu and alpha fixed at their true values; uniform grid prior"
+  }
+}

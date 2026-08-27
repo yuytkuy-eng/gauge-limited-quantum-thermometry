@@ -1,0 +1,9 @@
+name: gauge-limited-thermometry
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=2.0,<3
+  - scipy>=1.14,<2
+  - matplotlib>=3.8,<4
+  - pip

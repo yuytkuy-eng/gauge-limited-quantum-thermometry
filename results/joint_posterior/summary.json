@@ -1,0 +1,80 @@
+{
+  "seed": 20260722,
+  "true_parameters": {
+    "temperature": 0.9,
+    "memory_angle": 0.5,
+    "system_memory_angle": 0.55
+  },
+  "record_excitation_fraction": 0.0632,
+  "analytic_long_markov_fit_temperature": 0.823717711602607,
+  "snapshots": {
+    "100": {
+      "mean_temperature": 1.422110347777847,
+      "mean_memory": 0.8179521529856972,
+      "map_temperature": 0.8124161073825503,
+      "map_memory": 0.96,
+      "temperature_sd": 0.7374655594406865,
+      "memory_sd": 0.3652587843135963,
+      "posterior_correlation": 0.46845277965145316,
+      "temperature_95_interval": [
+        0.4389261744966443,
+        2.8932885906040267
+      ],
+      "memory_95_interval": [
+        0.05,
+        1.31
+      ]
+    },
+    "500": {
+      "mean_temperature": 1.6409730336756039,
+      "mean_memory": 0.8911789774447703,
+      "map_temperature": 2.608724832214765,
+      "map_memory": 1.1,
+      "temperature_sd": 0.694250975174038,
+      "memory_sd": 0.26903776109789207,
+      "posterior_correlation": 0.6759157161637269,
+      "temperature_95_interval": [
+        0.6523489932885906,
+        2.9288590604026847
+      ],
+      "memory_95_interval": [
+        0.13,
+        1.18
+      ]
+    },
+    "2000": {
+      "mean_temperature": 1.8218133374386762,
+      "mean_memory": 0.9174536132580386,
+      "map_temperature": 2.2885906040268456,
+      "map_memory": 1.03,
+      "temperature_sd": 0.630560148450766,
+      "memory_sd": 0.17966184880389152,
+      "posterior_correlation": 0.7257553253776677,
+      "temperature_95_interval": [
+        0.8302013422818791,
+        2.9466442953020135
+      ],
+      "memory_95_interval": [
+        0.36,
+        1.09
+      ]
+    },
+    "10000": {
+      "mean_temperature": 1.0344529493183507,
+      "mean_memory": 0.5877790042644455,
+      "map_temperature": 0.9902684563758389,
+      "map_memory": 0.64,
+      "temperature_sd": 0.21190599900119325,
+      "memory_sd": 0.21729076166982414,
+      "posterior_correlation": 0.7472508793796917,
+      "temperature_95_interval": [
+        0.8124161073825503,
+        1.577181208053691
+      ],
+      "memory_95_interval": [
+        0.07,
+        0.93
+      ]
+    }
+  }
+}

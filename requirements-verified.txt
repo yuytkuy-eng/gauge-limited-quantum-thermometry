@@ -1,0 +1,4 @@
+# Environment used for the public-repository verification on 2026-08-28.
+numpy==2.4.4
+scipy==1.17.1
+matplotlib==3.10.9

@@ -1,0 +1,56 @@
+{
+  "parameters": {
+    "temperature": 0.8277777777777777,
+    "memory_angle": 0.35454545454545455,
+    "system_memory_angle": 0.55
+  },
+  "trajectory_count": 32,
+  "bootstrap_samples": 5000,
+  "maximum_record_length": 2000,
+  "weak_effective_rate_at_max_N": 0.0005311405366717759,
+  "full_swap_effective_rate_at_max_N": 0.01763161835784087,
+  "full_swap_to_weak_rate_ratio": 33.19576861582403,
+  "full_swap_to_weak_ratio_bootstrap_95_interval": [
+    16.860023643981638,
+    73.01820001218628
+  ],
+  "final_rows": {
+    "weak": {
+      "protocol": "weak",
+      "probe_angle": 0.72,
+      "length": 2000,
+      "trajectory_count": 32,
+      "rate_tt": 0.10448460720174457,
+      "rate_tm": -0.024263715729941064,
+      "rate_mm": 0.005663379201390264,
+      "effective_temperature_rate": 0.0005311405366717759,
+      "effective_rate_bootstrap_low": 0.0002533604139562922,
+      "effective_rate_bootstrap_high": 0.0007667710295550437,
+      "minimum_eigenvalue_rate": 2.7315945824796933e-05,
+      "maximum_eigenvalue_rate": 0.11012067045731004,
+      "condition_number": 4031.3694851944115,
+      "mean_record_excitation": 0.046375,
+      "mean_score_temperature": 5.653270285699286,
+      "mean_score_memory": -1.3943849559030497
+    },
+    "full_swap": {
+      "protocol": "full_swap",
+      "probe_angle": 1.5707963267948966,
+      "length": 2000,
+      "trajectory_count": 32,
+      "rate_tt": 0.08242656107718742,
+      "rate_tm": -0.013924866770028323,
+      "rate_mm": 0.0029925470480452105,
+      "effective_temperature_rate": 0.01763161835784087,
+      "effective_rate_bootstrap_low": 0.009683833979476615,
+      "effective_rate_bootstrap_high": 0.02408636607107585,
+      "minimum_eigenvalue_rate": 0.0006222333976163945,
+      "maximum_eigenvalue_rate": 0.08479687472761624,
+      "condition_number": 136.27824390726985,
+      "mean_record_excitation": 0.05984375,
+      "mean_score_temperature": -1.785916536932497,
+      "mean_score_memory": 0.43251315790016065
+    }
+  },
+  "caution": "Percentile trajectory bootstrap from 32 paths; larger ensembles remain desirable."
+}

@@ -1,0 +1,500 @@
+{
+  "parameters": {
+    "temperature": 0.9,
+    "memory_angle": 0.5,
+    "false_positive": 0.02,
+    "false_negative": 0.04
+  },
+  "record_length": 8,
+  "independent_unit": "one independently prepared length-8 trajectory block; each ground/excited reference is one independent binary readout",
+  "protocols": {
+    "internal_basis": {
+      "all_z_block_fraction": 0.675,
+      "all_x_block_fraction": 0.325
+    },
+    "external_references": {
+      "sensing_readout_fraction": 0.795,
+      "ground_reference_fraction": 0.185,
+      "excited_reference_fraction": 0.02
+    }
+  },
+  "mle_replicates_per_case": 96,
+  "mle_temperature_results": [
+    {
+      "protocol": "internal_basis",
+      "total_binary_readouts": 1000000,
+      "independent_units": 125000,
+      "parameter": "temperature",
+      "replicates": 96,
+      "predicted_sd": 0.12073612746506517,
+      "empirical_sd": 0.12458892766924758,
+      "bias": 0.03484526490871021,
+      "rmse": 0.12874355016198957,
+      "mean_reported_se": 0.14356663917197812,
+      "wald_95_coverage": 0.9791666666666666,
+      "boundary_fraction": 0.0,
+      "converged_fraction": 0.9375,
+      "wald_coverage_monte_carlo_95_interval": [
+        0.9271928648221579,
+        0.9942680301475697
+      ]
+    },
+    {
+      "protocol": "internal_basis",
+      "total_binary_readouts": 8000000,
+      "independent_units": 1000000,
+      "parameter": "temperature",
+      "replicates": 96,
+      "predicted_sd": 0.04268666723237547,
+      "empirical_sd": 0.045743112898707645,
+      "bias": 0.0019249482568799864,
+      "rmse": 0.04554494080416521,
+      "mean_reported_se": 0.04326597718401526,
+      "wald_95_coverage": 0.9479166666666666,
+      "boundary_fraction": 0.0,
+      "converged_fraction": 1.0,
+      "wald_coverage_monte_carlo_95_interval": [
+        0.8838152196850738,
+        0.9775503995257587
+      ]
+    },
+    {
+      "protocol": "external_references",
+      "total_binary_readouts": 1000000,
+      "independent_units": 304375,
+      "parameter": "temperature",
+      "replicates": 96,
+      "predicted_sd": 0.01129758401345462,
+      "empirical_sd": 0.011393381770307978,
+      "bias": 0.000565349678816616,
+      "rmse": 0.011347977343853661,
+      "mean_reported_se": 0.011300271916219929,
+      "wald_95_coverage": 0.9479166666666666,
+      "boundary_fraction": 0.0,
+      "converged_fraction": 1.0,
+      "wald_coverage_monte_carlo_95_interval": [
+        0.8838152196850738,
+        0.9775503995257587
+      ]
+    },
+    {
+      "protocol": "external_references",
+      "total_binary_readouts": 8000000,
+      "independent_units": 2435000,
+      "parameter": "temperature",
+      "replicates": 96,
+      "predicted_sd": 0.003994299133469247,
+      "empirical_sd": 0.004145909985131719,
+      "bias": -0.00010566103051351759,
+      "rmse": 0.004125613440221213,
+      "mean_reported_se": 0.003993170457295446,
+      "wald_95_coverage": 0.9270833333333334,
+      "boundary_fraction": 0.0,
+      "converged_fraction": 1.0,
+      "wald_coverage_monte_carlo_95_interval": [
+        0.8570696833485983,
+        0.9642324186896375
+      ]
+    }
+  ],
+  "linearized_coverage_diagnostics": {
+    "internal_basis": {
+      "1000000": {
+        "replicates": 1000,
+        "linearized_95_coverage": [
+          0.948,
+          0.948,
+          0.942,
+          0.956
+        ],
+        "linearized_bias": [
+          0.005124588853872467,
+          -0.0019475140489097474,
+          -0.0003645594336763086,
+          -0.0004134940325527173
+        ],
+        "linearized_empirical_sd": [
+          0.12041824427354471,
+          0.05968610468380635,
+          0.008612445385458483,
+          0.00868806052383105
+        ],
+        "fisher_predicted_sd": [
+          0.12073612746506517,
+          0.059646442595477946,
+          0.00865731001848075,
+          0.008844677498583791
+        ],
+        "physical_parameter_fraction": 0.98,
+        "negative_assignment_fraction": 0.016
+      },
+      "8000000": {
+        "replicates": 1000,
+        "linearized_95_coverage": [
+          0.955,
+          0.956,
+          0.953,
+          0.949
+        ],
+        "linearized_bias": [
+          0.0015722247440663208,
+          -0.0010152522997836223,
+          -0.00012040452729792114,
+          -0.00014121340314544506
+        ],
+        "linearized_empirical_sd": [
+          0.04217618892945754,
+          0.021014461530262867,
+          0.00302585410692571,
+          0.0031063589580063375
+        ],
+        "fisher_predicted_sd": [
+          0.04268666723237547,
+          0.021088202016458297,
+          0.0030608213104509866,
+          0.0031270657183283344
+        ],
+        "physical_parameter_fraction": 1.0,
+        "negative_assignment_fraction": 0.0
+      }
+    },
+    "external_references": {
+      "1000000": {
+        "replicates": 1000,
+        "linearized_95_coverage": [
+          0.946,
+          0.956,
+          0.949,
+          0.947
+        ],
+        "linearized_bias": [
+          -1.74330931279284e-05,
+          -0.00023767397424254245,
+          -7.702433754080823e-06,
+          8.400000078167428e-06
+        ],
+        "linearized_empirical_sd": [
+          0.011190372846333884,
+          0.026896711421968898,
+          0.0003247186538171899,
+          0.001373882088094197
+        ],
+        "fisher_predicted_sd": [
+          0.01129758401345462,
+          0.02744221970600287,
+          0.0003253205286178979,
+          0.0013856406460551018
+        ],
+        "physical_parameter_fraction": 1.0,
+        "negative_assignment_fraction": 0.0
+      },
+      "8000000": {
+        "replicates": 1000,
+        "linearized_95_coverage": [
+          0.951,
+          0.95,
+          0.949,
+          0.954
+        ],
+        "linearized_bias": [
+          8.95023566525721e-06,
+          -8.268191847513811e-05,
+          8.87727425683299e-07,
+          7.568749999148257e-06
+        ],
+        "linearized_empirical_sd": [
+          0.004003732435947656,
+          0.009926664161835934,
+          0.00011280961370047122,
+          0.00047996825823112637
+        ],
+        "fisher_predicted_sd": [
+          0.003994299133469247,
+          0.009702289822462866,
+          0.00011501817592245396,
+          0.0004898979485566356
+        ],
+        "physical_parameter_fraction": 1.0,
+        "negative_assignment_fraction": 0.0
+      }
+    }
+  },
+  "posterior_cases": [
+    {
+      "protocol": "internal_basis",
+      "total_binary_readouts": 8000000,
+      "allocation": [
+        675000,
+        325000
+      ],
+      "independent_units": 1000000,
+      "mle": [
+        0.8728062635676659,
+        0.5103770313174664,
+        0.022137102794952415,
+        0.042613557663661025
+      ],
+      "mle_converged": true,
+      "coordinate_system": "gauge-adapted (T,mu,alpha,kappa), reported in physical coordinates",
+      "posterior_mean": [
+        0.8723132178671816,
+        0.5102885988259782,
+        0.02222568485109729,
+        0.0427078667831819
+      ],
+      "posterior_median": [
+        0.8723188713897894,
+        0.5101613631404569,
+        0.022183231774079187,
+        0.04269228685958282
+      ],
+      "posterior_sd": [
+        0.03773339081587728,
+        0.020412159294049822,
+        0.002805043574439142,
+        0.0028928385249057287
+      ],
+      "equal_tailed_95_interval": [
+        [
+          0.7965480679951883,
+          0.9436693002829172
+        ],
+        [
+          0.47200404284702235,
+          0.5493687582735357
+        ],
+        [
+          0.016999887389399067,
+          0.027982502819868815
+        ],
+        [
+          0.03720713656336361,
+          0.048527853253479636
+        ]
+      ],
+      "true_value_covered": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "correlation": [
+        [
+          1.0,
+          -0.8124031562015694,
+          -0.9948072964590813,
+          -0.9700300458491153
+        ],
+        [
+          -0.8124031562015693,
+          0.9999999999999998,
+          0.8592751390671552,
+          0.8400685174363158
+        ],
+        [
+          -0.9948072964590812,
+          0.8592751390671552,
+          1.0,
+          0.9781365817427646
+        ],
+        [
+          -0.9700300458491153,
+          0.8400685174363158,
+          0.9781365817427645,
+          1.0
+        ]
+      ],
+      "acceptance_rate": [
+        0.32771428571428574,
+        0.2968571428571429,
+        0.3397142857142857,
+        0.291
+      ],
+      "split_rhat_sampling_coordinates": [
+        1.0070904160174248,
+        1.0072977819794564,
+        1.0072606425692887,
+        1.0071342586687122
+      ],
+      "bulk_ess_sampling_coordinates": [
+        329.9062542838345,
+        441.6618877345836,
+        330.4321953711665,
+        322.7708436585075
+      ],
+      "proposal_scales": [
+        0.6838614092123552,
+        0.8187307530779809,
+        0.6312836455069251,
+        0.7866278610665528
+      ],
+      "draws_per_chain": 5000,
+      "chains": 4,
+      "burn_in_per_chain": 2000,
+      "prior": {
+        "type": "uniform on bounded physical domain",
+        "bounds": [
+          [
+            0.3,
+            2.0
+          ],
+          [
+            0.02,
+            1.35
+          ],
+          [
+            0.001,
+            0.15
+          ],
+          [
+            0.001,
+            0.35
+          ]
+        ],
+        "maximum_alpha_plus_beta": 0.95
+      }
+    },
+    {
+      "protocol": "external_references",
+      "total_binary_readouts": 8000000,
+      "allocation": [
+        795000,
+        1480000,
+        160000
+      ],
+      "independent_units": 2435000,
+      "mle": [
+        0.9000402273721209,
+        0.5110223000971985,
+        0.02012393814116402,
+        0.03929375000208849
+      ],
+      "mle_converged": true,
+      "coordinate_system": "physical (T,mu,alpha,beta)",
+      "posterior_mean": [
+        0.9002012189110635,
+        0.5108368365832748,
+        0.0201163086658869,
+        0.03928816779018218
+      ],
+      "posterior_median": [
+        0.9002298952140894,
+        0.5112938382441967,
+        0.020114635315078417,
+        0.03927703219967309
+      ],
+      "posterior_sd": [
+        0.00400710907037551,
+        0.009489519741885829,
+        0.00011505944402668299,
+        0.00047897348492005067
+      ],
+      "equal_tailed_95_interval": [
+        [
+          0.8922470125955412,
+          0.908002904563497
+        ],
+        [
+          0.4912409792279317,
+          0.5290248286257924
+        ],
+        [
+          0.019900016725107845,
+          0.020348385080471463
+        ],
+        [
+          0.038359127465760506,
+          0.04026123943102115
+        ]
+      ],
+      "true_value_covered": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "correlation": [
+        [
+          0.9999999999999998,
+          0.7192041144519656,
+          -0.42362937573586806,
+          0.11676376476339825
+        ],
+        [
+          0.7192041144519656,
+          0.9999999999999998,
+          0.07495741441974253,
+          -0.013810304687630568
+        ],
+        [
+          -0.423629375735868,
+          0.07495741441974253,
+          1.0,
+          -0.005650681366434691
+        ],
+        [
+          0.11676376476339825,
+          -0.013810304687630568,
+          -0.00565068136643469,
+          0.9999999999999999
+        ]
+      ],
+      "acceptance_rate": [
+        0.31657142857142856,
+        0.2674285714285714,
+        0.23742857142857143,
+        0.2602857142857143
+      ],
+      "split_rhat_sampling_coordinates": [
+        1.0011314573146723,
+        1.0014351017525884,
+        1.0006704603315195,
+        1.0087442651715515
+      ],
+      "bulk_ess_sampling_coordinates": [
+        1455.0556471620862,
+        1443.9030604988266,
+        1554.9430409005925,
+        1461.8416078058312
+      ],
+      "proposal_scales": [
+        0.9231163463866345,
+        1.1274968515793744,
+        1.1972173631218088,
+        1.1502737988572258
+      ],
+      "draws_per_chain": 5000,
+      "chains": 4,
+      "burn_in_per_chain": 2000,
+      "prior": {
+        "type": "uniform on bounded physical domain",
+        "bounds": [
+          [
+            0.3,
+            2.0
+          ],
+          [
+            0.02,
+            1.35
+          ],
+          [
+            0.001,
+            0.15
+          ],
+          [
+            0.001,
+            0.35
+          ]
+        ],
+        "maximum_alpha_plus_beta": 0.95
+      }
+    }
+  ],
+  "posterior_diagnostic_thresholds": {
+    "split_rhat": 1.05,
+    "bulk_ess": 200
+  },
+  "interval_definition": "equal-tailed 95% credible intervals; Wald intervals use estimate +/- 1.96 SE",
+  "interpretation": "Full four-dimensional inference confirms that internal basis self-calibration remains strongly correlated and non-Gaussian at finite budget, while explicit reference data regularize all four parameters and make Fisher/Wald approximations reliable much earlier.",
+  "coverage_reporting_note": "Coverage fractions from 96 exact MLE replicates are accompanied by Wilson 95% Monte Carlo intervals; the 1000-replicate score experiment separately validates nominal coverage."
+}

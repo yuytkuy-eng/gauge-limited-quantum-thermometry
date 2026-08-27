@@ -1,0 +1,44 @@
+{
+  "parameters": {
+    "temperature": 0.9,
+    "memory_angle": 0.5,
+    "system_memory_angle": 0.55,
+    "false_positive": 0.02,
+    "false_negative": 0.04,
+    "block_length": 8
+  },
+  "scan": {
+    "basis_alphabet": [
+      "Z",
+      "X"
+    ],
+    "schedules_tested": 256,
+    "mixture_weight_step": 0.005,
+    "baseline_schedule": "ZZZZZZZZ"
+  },
+  "optimal_basis_control": {
+    "complementary_schedule": "XXXXXXXX",
+    "complementary_block_fraction": 0.325,
+    "all_z_block_fraction": 0.675,
+    "pure_complementary_information_per_block": 2.897106020308956e-07,
+    "effective_information_per_block": 0.0005488017694561531,
+    "effective_information_per_readout": 6.860022118201914e-05,
+    "eigenvalues": [
+      0.0004606550887054873,
+      0.008717125344853412,
+      2.1817258795530714,
+      69.65013226627394
+    ],
+    "condition_number": 151198.00903969537,
+    "known_detector_information_per_block_same_design": 0.06892866018756758,
+    "fraction_of_known_detector_information": 0.007961880703364354
+  },
+  "fair_readout_comparison": {
+    "previous_internal_non_full_swap_information_per_readout": 3.02466769875262e-05,
+    "basis_control_gain_over_previous_internal": 2.2680250531425328,
+    "external_reference_information_per_readout": 0.007834816707731198,
+    "external_to_basis_control_information_ratio": 114.20978785101626,
+    "external_to_basis_control_sd_ratio": 10.68689795268095
+  },
+  "interpretation": "Known basis rotations break the full-swap detector-temperature gauge without sacrificing the reset architecture. Z and X block Fisher matrices are strongly complementary, but explicit state references remain substantially more efficient at this operating point."
+}
