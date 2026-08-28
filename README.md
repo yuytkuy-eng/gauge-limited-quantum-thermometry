@@ -1,5 +1,7 @@
 # Gauge limits to self-calibrating quantum thermometry: code and data
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22132062.svg)](https://doi.org/10.5281/zenodo.22132062)
+
 This repository contains only the reusable source code, tests, fixed-seed simulation outputs, and data provenance needed to reproduce the associated numerical study. Manuscript and journal-submission files are intentionally excluded.
 
 ## Repository layout
@@ -55,7 +57,7 @@ The full four-dimensional inference and global-design validations are computatio
 
 The `results/` directory contains the processed numerical records, source tables, fixed-seed ensembles, optimization results, and figure files supporting the manuscript. See [`results/README.md`](results/README.md) and [`docs/DATA_DICTIONARY.md`](docs/DATA_DICTIONARY.md) for file-level interpretation and provenance.
 
-The live code and data repository is <https://github.com/yuytkuy-eng/gauge-limited-quantum-thermometry>. A corrected code-and-data-only Zenodo DOI will be listed here after archival verification.
+The live code and data repository is <https://github.com/yuytkuy-eng/gauge-limited-quantum-thermometry>. The verified code-and-data-only archive for release `v0.2.0` is available at <https://doi.org/10.5281/zenodo.22138708>. The concept DOI <https://doi.org/10.5281/zenodo.22132062> resolves to the latest archived version.
 
 ## Licences
 

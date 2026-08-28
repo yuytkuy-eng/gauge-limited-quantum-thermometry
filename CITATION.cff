@@ -10,8 +10,9 @@ authors:
 version: 0.2.0
 date-released: 2026-08-28
 license: MIT
+doi: "10.5281/zenodo.22138708"
 repository-code: "https://github.com/yuytkuy-eng/gauge-limited-quantum-thermometry"
-url: "https://github.com/yuytkuy-eng/gauge-limited-quantum-thermometry"
+url: "https://doi.org/10.5281/zenodo.22138708"
 keywords:
   - quantum thermometry
   - quantum metrology
